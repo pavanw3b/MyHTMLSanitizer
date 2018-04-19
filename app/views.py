@@ -22,7 +22,9 @@ def add_follower(request):
     followers = NullHydFollower.objects.all()
     context = {"followers": followers}
 
-    return render(request, 'app/add-follower.html', context)
+    response = render(request, 'app/add-follower.html', context)
+    response['X-XSS-Protection'] = 0
+    return response
 
 
 @login_required
@@ -37,7 +39,9 @@ def article(request):
     comments = Comment.objects.all().order_by("-id")
     context = {"comments": comments}
 
-    return render(request, 'app/article.html', context)
+    response = render(request, 'app/article.html', context)
+    response['X-XSS-Protection'] = 0
+    return response
 
 
 @login_required

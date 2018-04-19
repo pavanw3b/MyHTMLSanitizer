@@ -20,10 +20,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
     path('app/add-follower', views.add_follower),
     path('app/article', views.article),
-    path('logout/', views.logout_user)
+    path('logout/', views.logout_user),
+    path('', views.index),
 ]
 
 # Print banner on the console when the server starts
