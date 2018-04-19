@@ -12,11 +12,13 @@ ___  ___        _____             _ _   _
 My Sanitizer is an app to demonstrate how to build an (in)secure Sanitizer.
 
 **Setup:**
+- [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if not installed already.
 - Clone the repo: `git clone https://gitlab.com/pavanw3b/MySanitizer.git`
-- Install venv
-- Create a new env: `virtualenv venv`
+- Navigate to the cloned folder: `cd MySanitizer`
+- [Install pip](https://pip.pypa.io/en/stable/installing/) if not installed earlier.
+- [Install virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
+- Create a new python3 env: `virtualenv -p python3 venv`
 - Activate the env: `source venv/bin/activate`
-- Navigate to the cloned folder: `cd mysanitizer`
 - Set up the dependencies: `pip install -r requirements.txt`
 - Set up the database: `python manage.py migrate`
 - Set up an admin account: `python manage.py createsuperuser`
