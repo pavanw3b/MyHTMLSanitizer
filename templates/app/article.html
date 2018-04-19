@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %} Blog Article | {% endblock %}
+{% block page %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Article</h1>
+                <ol class="breadcrumb">
+                    <li><i class="fa fa-dashboard"></i> <a href="/">Home</a></li>
+                    <li><i class="fa fa-flag"></i> Article</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row fluid">
+            <div class="col-md-12">
+                <p align="justify">
+Lorem ipsum dolor sit amet, imperdiet nibh mauris vel pede, arcu semper malesuada a, sit mauris pellentesque ligula, in pede amet volutpat ut. Aenean volutpat nulla dolor, vehicula integer scelerisque aliquam sit, vel montes aliquam magna. Est urna ligula metus excepteur, egestas nibh tellus eget, vestibulum eleifend nam ultricies. Eos velit eget diam, in vestibulum curabitur at. Ut ligula donec nisl massa, a nullam pede velit erat, sagittis ut aliquam tincidunt. Ligula eu orci lacinia, enim mi proin dolor, amet orci pede ad sem, massa nulla magna sagittis. Dolor lobortis cubilia in libero, sollicitudin iaculis phasellus odio etiam, ut facilisis eget cum praesentium. Amet magnis dui sit, provident fermentum curabitur auctor felis, et nibh porttitor ullamcorper elit, augue quis mauris aenean a. Tellus velit volutpat aliquet sed, nec pellentesque elit feugiat.</p>
+<p align="justify">
+Turpis orci rhoncus sit, eu mi accusamus est, suscipit fermentum aliquet nulla. Massa illum curabitur malesuada, wisi quis mauris lacus urna, lorem lectus amet auctor, integer quis ac nunc duis. Tristique purus mauris venenatis, turpis nisl ut curabitur, sed nulla ac sagittis. Consectetuer elementum posuere eros nascetur, sem enim a duis nam. Congue fringilla tincidunt donec luctus, augue elit mi est, dui iaculis nulla sed. Eget ultricies id in leo, ipsum purus ultrices cubilia. Mauris per eu tempor, commodo ornare malesuada cum libero. Mollis dolor dignissim augue, sem velit semper id, sed habitant integer ut. Posuere sed gravida ac ipsum, ut nunc lectus lorem eu, et ullamcorper ac luctus ultricies, platea sapien tincidunt morbi pretium.</p>
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form role="form" method="post">
+                    {% if "success" == submitted %}
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="alert alert-info alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button> <i class="fa fa-info-circle"></i> Submitted
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+
+                    <div class="form-group">
+                        <label>Comment</label><br />
+                        <div><small>You can basic html like &lt;p&gt; &lt;b&gt; or &lt;div&gt;</small></div>
+                        <textarea class="form-control" name="content" id="content"></textarea>
+                    </div>
+                    <button type="submit" name="add" value="add" class="btn btn-success">Submit</button>
+                    {% csrf_token %}
+                </form>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-flag"></i> Comments</h3>
+                    </div>
+                    <div class="panel-body">
+                        {% if comments %}
+                            {% for comment in comments %}
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <b>Comment #{{ comment.id }}</b>
+                                        <div>{{ comment.content | safe }}</div>
+                                        <div><small>{{ comment.created_at }}</small></div>
+                                        <br/>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <b>Be the first one comment!</b>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+{% endblock %}

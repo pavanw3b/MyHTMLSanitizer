@@ -1,0 +1,13 @@
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav side-nav">
+        <li {% if "/" == request.path %} class="active" {% endif %}>
+            <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+        </li>
+        <li {% if '/app/add-follower' in request.path %}class="active" {% endif %}>
+            <a href="/app/add-follower"><i class="fa fa-fw fa-dashboard"></i> Add Follower</a>
+        </li>
+        <li {% if '/app/article' in request.path %}class="active" {% endif %}>
+            <a href="/app/article"><i class="fa fa-fw fa-flag-o"></i> Article</a>
+        </li>
+    </ul>
+</div>
