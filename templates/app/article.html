@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %} Blog Article | {% endblock %}
+{% block title %} Blog Article{% endblock %}
 {% block page %}
 
     <div class="container-fluid">
@@ -24,12 +24,23 @@ Turpis orci rhoncus sit, eu mi accusamus est, suscipit fermentum aliquet nulla. 
         <div class="row">
             <div class="col-md-6">
                 <form role="form" method="post">
-                    {% if "success" == submitted %}
+                    {% if submitted %}
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="alert alert-info alert-dismissable">
-                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button> <i class="fa fa-info-circle"></i> Submitted
-                                </div>
+                            <div class="col-lg-12">
+
+                                    {% if not has_error %}
+                                        <div class="alert alert-info alert-dismissable">
+                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                            <i class="fa fa-info-circle"></i> Your comment has been posted.
+                                        </div>
+
+                                    {% else %}
+                                        <div class="alert alert-danger alert-dismissable">
+                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                            <i class="fa fa-exclamation-triangle"></i>
+                                            Your comment is unacceptable.
+                                        </div>
+                                    {% endif %}
                             </div>
                         </div>
                     {% endif %}
@@ -37,7 +48,7 @@ Turpis orci rhoncus sit, eu mi accusamus est, suscipit fermentum aliquet nulla. 
                     <div class="form-group">
                         <label>Comment</label><br />
                         <div><small>You can basic html like &lt;p&gt; &lt;b&gt; or &lt;div&gt;</small></div>
-                        <textarea class="form-control" name="content" id="content"></textarea>
+                        <textarea class="form-control" name="content" id="content">{{ content }}</textarea>
                     </div>
                     <button type="submit" name="add" value="add" class="btn btn-success">Submit</button>
                     {% csrf_token %}
