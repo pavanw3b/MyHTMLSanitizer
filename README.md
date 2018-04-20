@@ -16,12 +16,12 @@ Created for Null Hyderabad Bachav session on "Building an (in)secure Sanitizer"<
 **Place:** ServiceNow, Hyderabad, India
 
 ### Setup Instructions:
-- Get [Pycharm CE](https://www.jetbrains.com/pycharm/download/) or your fav python IDE
-- [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if not installed already.
-- Clone the repo: `https://github.com/pavanw3b/MySanitizer.git`
+- Get [Pycharm CE](https://www.jetbrains.com/pycharm/download/){:target="_blank"} or your fav python IDE
+- [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){:target="_blank"} if not installed already.
+- Clone the repo: `git clone https://github.com/pavanw3b/MySanitizer.git`
 - Navigate to the cloned folder: `cd MySanitizer`
-- [Install pip](https://pip.pypa.io/en/stable/installing/) if not installed earlier.
-- [Install virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
+- [Install pip](https://pip.pypa.io/en/stable/installing/){:target="_blank"} if not installed earlier.
+- [Install virtualenv](https://virtualenv.pypa.io/en/stable/installation/){:target="_blank"}
 - Create a new python3 virtual environment: `virtualenv -p python3 venv`
 - Activate the env: `source venv/bin/activate`
 - Install the dependencies: `pip install -r requirements.txt`
@@ -31,7 +31,7 @@ Created for Null Hyderabad Bachav session on "Building an (in)secure Sanitizer"<
 
 **Author & Presenter:**
 
-Pavan: [@pavanw3b](https://twitter.com/pavanw3b)<br />
+Pavan: [@pavanw3b](https://twitter.com/pavanw3b){:target="_blank"}<br />
 Core Member, Null Hyd
 
 ### Liked it?
@@ -40,6 +40,6 @@ Did you like the session & want to give credits? There are multiple ways you sho
 Use the following details to post about the event on twitter & facebook.
 
 **Event hashtag:** `#nullhyd`<br />
-**Null Hyderabad official accounts:** [@nullhyd](https://twitter.com/nullhyd) or [fb/nullhyd](https://facebook.com/nullhyd)<br />
-**Venue sponser:** [@servicenow](https://twitter.com/servicenow) or [fb/servicenow](https://facebook.com/servicenow)<br />
-**Presenter:** [@pavanw3b](https://twitter.com/pavanw3b) or [fb.me/pavanw3b](https://facebook.com/pavanw3b/)
+**Null Hyderabad official accounts:** [@nullhyd](https://twitter.com/nullhyd){:target="_blank"} or [fb/nullhyd](https://facebook.com/nullhyd){:target="_blank"}<br />
+**Venue sponser:** [@servicenow](https://twitter.com/servicenow){:target="_blank"} or [fb/servicenow](https://facebook.com/servicenow){:target="_blank"}<br />
+**Presenter:** [@pavanw3b](https://twitter.com/pavanw3b){:target="_blank"} or [fb.me/pavanw3b](https://facebook.com/pavanw3b/){:target="_blank"}
