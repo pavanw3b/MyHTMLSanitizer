@@ -14,7 +14,7 @@ My Sanitizer is an app to demonstrate how to build an (in)secure Sanitizer.
 **Setup:**
 - [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if not installed already.
 - Clone the repo: `git clone https://github.com/pavanw3b/MyHTMLSanitizer.git`
-- Navigate to the cloned folder: `cd MySanitizer`
+- Navigate to the cloned folder: `cd MyHTMLSanitizer`
 - [Install pip](https://pip.pypa.io/en/stable/installing/) if not installed earlier.
 - [Install virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
 - Create a new python3 env: `virtualenv -p python3 venv`
