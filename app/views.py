@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .models import NullHydFollower, Comment
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
-from .MyHTMLSanitizer import MyHTMLSanitizer
+from mysecurityutils.myhtmlsanitizer import MyHTMLSanitizer
 
 
 # View for homepage
