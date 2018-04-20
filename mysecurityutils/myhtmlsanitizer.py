@@ -6,7 +6,8 @@ class MyHTMLSanitizer:
         self.bad_tags = ['script', 'form', 'input']
         self.bad_attributes = ['onmouseover', 'onkeydown', 'onerror']
 
-    def sanitize(self, text):
+    @staticmethod
+    def sanitize(text):
         #  Add Sanitize Rules here
 
         return text
