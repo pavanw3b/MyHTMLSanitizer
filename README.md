@@ -38,9 +38,14 @@ Core Member, Null Hyd
 ### Liked it?
 Did you like the session & want to give credits? There are multiple ways you show your gratitude.
 
-Use the following details to post about the event on twitter & facebook.
+- Let us know how did you find the session
+- Sign up to become a volunteer!
+- Speak in the next session
+- Use the following details to post about the event on twitter & facebook.
 
 **Event hashtag:** `#nullhyd`<br />
 **Null Hyderabad official accounts:** <a href="https://twitter.com/nullhyd" target="_blank">@nullhyd</a> or <a href="https://facebook.com/nullhyd" target="_blank">fb/nullhyd</a><br />
 **Venue sponser:** <a href="https://twitter.com/servicenow"  target="_blank">servicenow</a> or <a href="https://facebook.com/servicenow" target="_blank">fb/servicenow</a><br />
-**Presenter:** <a href="https://twitter.com/pavanw3b" target="_blank">@pavanw3b</a> or <a href="https://facebook.com/pavanw3b/" target="_blank">fb.me/pavanw3b</a>
+**Presenter:** <a href="https://twitter.com/pavanw3b" target="_blank">@pavanw3b</a> or <a href="https://facebook.com/pavanw3b/" target="_blank">fb.me/pavanw3b</a><br />
+[null Google group](https://groups.google.com/forum/#!forum/null-co-in)<br/>
+[null jobs portal](https://jobs.null.co.in/)<br/>
