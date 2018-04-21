@@ -16,6 +16,7 @@ Created for Null Hyderabad Bachav session on "Building an (in)secure Sanitizer"<
 **Place:** ServiceNow, Hyderabad, India
 
 ### Setup Instructions:
+- Download & install Python3
 - Get <a href="https://www.jetbrains.com/pycharm/download/" target="_blank">PyCharm CE</a> or a python IDE of your choice.
 - <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"  target="_blank">Install git</a> if not installed already.
 - Clone the repo: `git clone https://github.com/pavanw3b/MySanitizer.git`
