@@ -15,6 +15,8 @@ Created for Null Hyderabad Bachav session on "Building an (in)secure Sanitizer"<
 **Date:** 21st of April, 2018<br />
 **Place:** ServiceNow, Hyderabad, India
 
+**Note:** This is a basic app. We will keep enhancing this sanitizer script step by step. The final solution is in the *fina_solution* branch.
+
 ### Setup Instructions:
 - Download & install Python3
 - Get <a href="https://www.jetbrains.com/pycharm/download/" target="_blank">PyCharm CE</a> or a python IDE of your choice.

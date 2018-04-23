@@ -55,7 +55,7 @@
                                         {% for follower in followers %}
                                             <tr>
                                                 <td>{{ follower.id }}</td>
-                                                <td>{{ follower.follower_name | safe }}</td>
+                                                <td>{{ follower.follower_name }}</td>
                                                 <td>{{ follower.registration_time }}</td>
                                             </tr>
                                         {% endfor %}
